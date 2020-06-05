@@ -45,7 +45,7 @@ class UsbAdapter(private val listener: OnItemClickListener?): RecyclerView.Adapt
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val usbDevice: UsbDevice = usbList[position]
         val usbInfo: StringBuilder = StringBuilder()
-        usbInfo.append("Usb Device").append(usbDevice.deviceName).append("\t ").append("ProductId is ")
+        usbInfo.append(" Usb Device ").append(usbDevice.deviceName).append("\t ").append("ProductId is ")
             .append(Integer.toHexString(usbDevice.productId)).append("\t ").append("VendorId is ")
             .append(Integer.toHexString(usbDevice.vendorId))
         holder.usbInfo.text = usbInfo.toString()
