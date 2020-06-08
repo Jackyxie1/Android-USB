@@ -25,7 +25,7 @@ class UsbDeviceActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        adapter = UsbAdapter(object: UsbAdapter.OnItemClickListener{
+        adapter = UsbAdapter(object : UsbAdapter.OnItemClickListener {
             override fun onclick(view: View?, position: Int) {
                 resultToMain(adapter.getItem(position))
             }
